@@ -23,6 +23,5 @@ services:
 
     volumes:
       - ./nginx-preprod/html:/usr/share/nginx/html
-      - ./nginx-preprod/images:/usr/share/nginx/images
-      - /home/max/homedocker/storage/images:/usr/share/nginx/teste
       - ./nginx-preprod/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - /home/max/homedocker/storage/images:/usr/share/nginx/images
