@@ -22,7 +22,7 @@ services:
       - TZ=Europe/Paris
 
     volumes:
-      - ./nginx-dev/html:/usr/share/nginx/html
-      - ./nginx-dev/images:/usr/share/nginx/images
+      - ./nginx-preprod/html:/usr/share/nginx/html
+      - ./nginx-preprod/images:/usr/share/nginx/images
       - /home/max/homedocker/storage/images:/usr/share/nginx/teste
-      - ./nginx-dev/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx-preprod/nginx/default.conf:/etc/nginx/conf.d/default.conf
