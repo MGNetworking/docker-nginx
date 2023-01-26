@@ -16,6 +16,7 @@ services:
     ports:
       - 80:80
       - 88:88
+      - 99:99
       - 443:443
 
     environment:
@@ -24,4 +25,4 @@ services:
     volumes:
       - ./nginx-dev/html:/usr/share/nginx/html
       - ./nginx-dev/nginx/default.conf:/etc/nginx/conf.d/default.conf
-      - /home/maxime/projet/blog/upload-Testing:/usr/share/nginx/images
+      - /home/maxime/projet/blog/images-site:/usr/share/nginx/images
